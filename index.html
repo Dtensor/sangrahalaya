@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sangrahalaya</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Instrument+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f1f0ec;--card:#fbfaf7;--ink:#1c1d20;--muted:#62646b;--line:#dcd8cf;--accent:#23457a;--warm:#8a3b1c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121417;--card:#1a1d21;--ink:#ecebe6;--muted:#9a9ca3;--line:#2c3036;--accent:#8fb0e6;--warm:#e39a74}}
+:root[data-theme="dark"]{--bg:#121417;--card:#1a1d21;--ink:#ecebe6;--muted:#9a9ca3;--line:#2c3036;--accent:#8fb0e6;--warm:#e39a74}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Instrument Sans",system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+main{width:100%;max-width:1040px;margin:0 auto;padding:clamp(40px,9vh,96px) 16px 48px;flex:1}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--muted)}
+h1{font:400 clamp(40px,7vw,72px)/1.02 Marcellus,serif;margin:.25em 0 .3em}
+.lede{max-width:56ch;color:var(--muted);font-size:18px;margin:0 0 44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+a.room{position:relative;display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 26px 26px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+a.room:hover,a.room:focus-visible{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.35)}
+a.room::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--c)}
+.arch{width:64px;height:78px;border:1.5px solid var(--c);border-radius:32px 32px 4px 4px;margin-bottom:22px;display:grid;place-items:center;font:22px Marcellus,serif;color:var(--c)}
+h2{font:400 28px/1.15 Marcellus,serif;margin:0 0 4px}
+.dev{font-size:13px;color:var(--muted);margin:0 0 14px}
+.room p{margin:0 0 20px;color:var(--muted)}
+.go{font-weight:500;color:var(--c)}
+footer{max-width:1040px;margin:0 auto;padding:0 16px 32px;width:100%;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){a.room{transition:none}}
+</style>
+<main>
+  <div class="eyebrow">संग्रहालय · a museum of making</div>
+  <h1>Sangrahalaya</h1>
+  <p class="lede">Two walkable halls. One holds every app in the estate, each shown as a working machine. The other holds everything designed, forged and printed.</p>
+  <div class="grid">
+    <a class="room" href="yantra/" style="--c:var(--accent)">
+      <div class="arch">य</div>
+      <h2>Yantra Sangrahalaya</h2>
+      <div class="dev">यन्त्र · the museum of apps</div>
+      <p>Hundreds of apps in seven halls around a domed rotunda. Each exhibit is built from what the app takes in, what it does and what it makes.</p>
+      <span class="go">Enter the rotunda →</span>
+    </a>
+    <a class="room" href="prints/" style="--c:var(--warm)">
+      <div class="arch">स</div>
+      <h2>Sangrahalaya</h2>
+      <div class="dev">the museum of made things</div>
+      <p>Built products, conceived designs, forged parts and qualified capabilities, each with its record of how it was made.</p>
+      <span class="go">Walk the wings →</span>
+    </a>
+  </div>
+</main>
+<footer>Walk with WASD or the arrow keys, drag to look, and click to glide. Works on phones too. This public edition leaves out private locations and launch details.</footer>
